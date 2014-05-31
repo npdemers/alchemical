@@ -1,0 +1,243 @@
+/*
+Theme Name: Alchemical
+Theme URI: http://npdemers.net/alchemical
+Author: Nicolas Demers
+Author URI: http://npdemers.net/
+Description: This is a basic starter theme
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: alchemical
+Tags:
+
+*/
+
+/* RESET */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+textarea {
+    margin:0;
+    padding:0;
+    width:98%;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #aaa;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+img, object, embed {
+	max-width: 100%;
+}
+
+ul {list-style: none;}
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+/* NOT RESET */
+
+html {
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	color:#333;
+	font-size:100%;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	line-height:1.5;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+	border:1px solid #CCC;
+	font-size:100%;
+	padding:4px 6px;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	border:1px solid #ccc;
+	background:#fff;
+	padding:6px 8px;
+	font-size:100%;
+}
+
+/* Main navigation menu [draft] */
+
+#menu-toggle {
+	display:none;
+}
+
+ul#menu-main-menu li:hover > ul,
+#menu-main-menu ul li:hover > ul {
+	display: block;
+	z-index:10;
+}
+
+ul#menu-main-menu, ul#menu-main-menu ul {
+	margin:0;
+	padding:0;
+}
+
+ul#menu-main-menu ul {
+	//box-shadow:1px 1px 2px 2px #aaa;
+	background-color:#FFA;
+}
+
+ul#menu-main-menu li li {
+	width:200px;
+}
+
+#menu-main-menu li {
+	position:relative;
+	display:inline-block;
+}
+
+#menu-main-menu a {
+	text-decoration:none;
+	color:#000;
+}
+
+#menu-main-menu li li > a {
+	padding:5px;
+	background-color:#FFA;
+	//border-bottom:1px solid #555;
+	display:block;
+
+}
+
+#menu-main-menu ul.sub-menu {
+	//border-right:1px solid #555;
+}
+
+#menu-main-menu > li {
+	margin-right:0.5em;
+}
+
+#menu-main-menu li:hover > a, #menu-main-menu li a:hover {
+	background-color:#DD8;
+}
+
+#menu-main-menu li.current-menu-item > a, #menu-main-menu li.current-menu-ancestor > a {
+	color:#888;
+}
+
+#menu-main-menu .sub-menu {
+	position:absolute;
+	display:none;
+}
+
+#menu-main-menu .sub-menu .sub-menu {
+	top:0;
+	left:200px;
+}
+
+ul, ol {
+	margin:0 0 1em 2em;
+	padding-left:1em;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+	margin:0 0 0 1em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+.post-nav-prev, .paging-nav-prev {
+	float:left;
+}
+.post-nav-next, .paging-nav-next {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+p {
+	margin:1em 0;
+}
+
+blockquote {
+	margin:0 1em;
+}
+
+@media screen and (max-width: 600px) {
+	#menu-toggle,
+	.toggled ul#menu-main-menu {
+		display: block;
+	}
+
+	ul#menu-main-menu {
+		display: none;
+	}
+}

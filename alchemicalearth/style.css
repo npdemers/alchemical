@@ -1,0 +1,89 @@
+/*
+Theme Name: Alchemical Earth
+Theme URI:http://www.npdemers.net/projects/alchemical
+Author: Nicolas Demers
+Author url: http://www.npdemers.net/
+Version:0.1
+Template: alchemical
+Description: a basic one-column theme
+*/
+
+@import url("../alchemical/style.css");
+
+body {
+}
+
+#wrapper {
+	width:100%;
+	background-color:white;
+}
+
+#masthead {
+	background-color:#FFA;
+}
+
+#branding {
+	padding:1em 0 2em;
+	width:80%;
+	max-width:1200px;
+	margin:0 auto;
+}
+
+#site-navigation {
+	width:80%;
+	max-width:1200px;
+	margin:0 auto;
+	clear:both;
+}
+
+h1#site-title {
+	font-size:36px;
+}
+
+.skip-link {
+	display:none;
+}
+
+#site-navigation {
+}
+
+ul#menu-main-menu > li {
+	font-size:20px;
+	margin-right:1em;
+}
+
+ul#menu-main-menu > li a {
+	display:block;
+}
+
+ul#menu-main-menu > li:hover > a {
+}
+
+ul#menu-main-menu ul.sub-menu {
+	font-size:16px;
+	line-height:24px;
+	top:30px;
+	background-color:white;
+}
+
+#main {
+	width:80%;
+	max-width:1200px;
+	margin:0 auto;
+}
+
+h1.page-title {
+	font-size:20px;
+	margin:1em 0;
+}
+
+h1.page-title a {
+	color:black;
+	text-decoration:none;
+}
+
+#colophon {
+	width:80%;
+	max-width:1200px;
+	margin:0 auto;
+}
